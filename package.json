@@ -1,0 +1,21 @@
+{
+  "name": "@aloysius-software-factory/custom-express-validator",
+  "version": "1.0.8",
+  "description": "this package contains custom validators and sanitizers for express-validator package",
+  "types": "/dist/*.d.ts",
+  "files": ["dist", "src"], 
+  "main": "/dist/public-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aloysius",
+  "license": "ISC",
+  "dependencies": {
+    "@aloysius-software-factory/type-checker": "^1.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
