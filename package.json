@@ -1,12 +1,13 @@
 {
   "name": "@aloysius-software-factory/custom-express-validator",
-  "version": "1.0.8",
+  "version": "1.0.14",
   "description": "this package contains custom validators and sanitizers for express-validator package",
-  "types": "/dist/*.d.ts",
-  "files": ["dist", "src"], 
-  "main": "/dist/public-api.js",
+  "types": "public-api.d.ts",
+  "main": "public-api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build": "tsc && copy package.json dist", 
+    "publish-npm": "npm run build && cd dist && npm publish"
   },
   "author": "aloysius",
   "license": "ISC",
