@@ -1,6 +1,6 @@
 {
-  "name": "@aloysius-software-factory/custom-express-validator",
-  "version": "1.0.14",
+  "name": "@aloysius-software-factory/custom-express-validator-es6",
+  "version": "1.0.0",
   "description": "this package contains custom validators and sanitizers for express-validator package",
   "types": "public-api.d.ts",
   "main": "public-api.js",
