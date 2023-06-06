@@ -6,14 +6,14 @@ export const ValidDateValidator: CustomValidator = date => IsValidDate(date);
 export const ValidNumberValidator: CustomValidator = input => IsValidNumber(input);
 export const NonNegativeNumberValidator: CustomValidator = num => {
     const res = Number(num);
-    if(res === NaN || res < 0){
+    if(Number.isNaN(res) || res < 0){
         return false;
     }
     return true;
 };
 export const MoreThanZeroValidator: CustomValidator = num => {
     const res = Number(num);
-    if(res === NaN || res < 1)
+    if(Number.isNaN(res) || res < 1)
         return false;
     return true;
 };

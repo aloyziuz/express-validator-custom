@@ -6,7 +6,7 @@
   "main": "public-api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
-    "build": "tsc && copy package.json dist", 
+    "build": "tsc && copy package.json dist && copy README.md dist", 
     "publish-npm": "npm run build && cd dist && npm publish"
   },
   "author": "aloysius",
